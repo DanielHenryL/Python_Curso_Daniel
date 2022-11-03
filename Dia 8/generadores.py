@@ -1,15 +1,15 @@
-def generador():
+def generador(name):
     x = 1
-    yield x
+    yield f'{name}-{x}'
 
     x += 1
-    yield x
+    yield f'{name}-{x}'
 
-    x +=1
-    yield x
+    x += 1
+    yield f'{name}-{x}'
 
 
-g = generador()
+g = generador('daniel')
 print(next(g))
 print(next(g))
 print('Hola mundo')
