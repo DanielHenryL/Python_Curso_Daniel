@@ -1,11 +1,3 @@
-def descripcion(funcion):
-    def agregar_bienvenida(categoria):
-        print('Su turno es:')
-        print(next(funcion(categoria)))
-        print('Aguarde y sera atendido')
-    return agregar_bienvenida
-
-
 def numero_generador(cate):
 
     if cate == 'P':
@@ -26,4 +18,9 @@ per = numero_generador('P')
 far = numero_generador('F')
 cos = numero_generador('C')
 
+
+def descripcion(funcion,cliente):
+    print(f'{cliente} su turno es:')
+    print(funcion)
+    print('Aguarde y sera atendido')
 
