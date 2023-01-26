@@ -163,7 +163,7 @@ def pedir_cosas():
             hablar('Ya mismo estoy en eso')
             pedido = pedido.replace('busca en internet', '')
             pywhatkit.search(pedido)
-            
+
             pywhatkit.sendwhatmsg('+51992984382','Cuantos años tienes prra',13, 2)
             hablar('Esto es lo que he encontrado')
             continue
